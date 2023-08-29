@@ -2,7 +2,7 @@
     
      sh """
       docker rmi ${hubUser}/${project}:${ImageTag}
-      docker rmi ${hubUser}/${project} ${hubUser}/${project}:latest
+      docker rmi ${hubUser}/${project}:latest
      """
  }
 
