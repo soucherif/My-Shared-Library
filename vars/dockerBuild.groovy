@@ -11,7 +11,7 @@ def call(String aws_account_id, String region, String image_Name, String image_T
     
     sh """
      
-     docker build -t ${image_Name} .
+     docker build -t ${image_Name}:${image_Tag} .
      docker tag ${image_Name}:${image_Tag} ${aws_account_id}.dkr.ecr.${region}.amazonaws.com/${image_Name}:${image_Tag}
     """
 }
