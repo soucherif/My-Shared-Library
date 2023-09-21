@@ -7,12 +7,12 @@
      """
  }*/
 
-def call(String aws_account_id, String region, String ecr_repoName){
+def call(String aws_account_id, String region, String image_Name, String image_Tag){
     
     sh """
      
-     docker build -t ${ecr_repoName} .
-     docker tag ${ecr_repoName}:latest ${aws_account_id}.dkr.ecr.${region}.amazonaws.com/${ecr_repoName}:latest
+     docker build -t ${image_Name} .
+     docker tag ${image_Name}:${image_Tag} ${aws_account_id}.dkr.ecr.${region}.amazonaws.com/${image_Name}:${image_Tag}
     """
 }
 //sudo chmod 777 /var/run/docker.sock
