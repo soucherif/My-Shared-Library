@@ -7,7 +7,7 @@
      """
  }*/
 
-def call(String aws_account_id, String region, String ecr_repoName, String image_Name, String image_Tag){
+def call( String image_Name, String image_Tag){
     
     sh """
      
