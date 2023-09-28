@@ -19,7 +19,7 @@ M1pnSGhTcGVtODJjdHhnWkgrUStVSHE0WgpIV0cxMU5zZDZ5TzVDZ2ptVzJLRjNUcmExaDJPRTQ5
 M20wNnpzWjR2bDZTdWRTekI1a0RVTDloaTVocmt0M3c3Ck5JV1hVZnBoTzFZOFNzRG9NQS9NVU1l
 eW1QZFp4RUlIVmlSbUFJdHRISmJSUThvajB0Yng2YlduajNHTHNFenAKa200RmZuV0FKL1h1OFE9
 PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
-    ''', clusterName: 'minikube', contextName: 'minikube', credentialsId: 'certif', namespace: 'argocd', restrictKubeConfigAccess: false, serverUrl: 'https://192.168.49.2:8443') {
+    ''', clusterName: 'minikube', contextName: 'minikube', credentialsId: 'Key', namespace: 'argocd', restrictKubeConfigAccess: false, serverUrl: 'https://192.168.49.2:8443') {
     sh " kubectl apply -f atm-app.yaml" 
 }
       
