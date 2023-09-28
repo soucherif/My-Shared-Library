@@ -1,5 +1,8 @@
 def call() {
-    sh " kubectl apply -f atm-app.yaml"   
+    withKubeConfig(caCertificate: '', clusterName: 'minikube', contextName: 'minikube', credentialsId: '', namespace: 'argocd', restrictKubeConfigAccess: false, serverUrl: 'https://kubernetes.default.svc') {
+    sh " kubectl apply -f atm-app.yaml" 
+}
+      
     
 }
 
