@@ -1,6 +1,6 @@
 
 
-def call( String image_Name, String image_Tag ,String aws_account_id, String region , String ecr_repoName){
+def call( String image_Name, String image_Tag, String aws_account_id, String region, String ecr_repoName){
     
     
     sh """
