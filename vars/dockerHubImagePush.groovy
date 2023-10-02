@@ -21,3 +21,5 @@ def call(String imageName, String imageTag, String hubUser){
             usernameVariable: "USER",
             passwordVariable: "PASS"
     )]) {*/
+    
+    //P@ssw0rdsou
